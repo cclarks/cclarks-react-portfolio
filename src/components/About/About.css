@@ -1,0 +1,74 @@
+
+/*ABOUT STYLES*/
+
+  #workHard {
+    font-family: 'Prata', serif;
+    font-style: italic;
+    font-size: 175%;
+    text-align: center;
+    margin-top: 2%;
+    color: rgb(122, 122, 122);
+    letter-spacing: .01em;
+    font-weight: 200;
+  }
+
+  #workDesDiv {
+    margin-top: 2.5%;
+    text-align: center;
+    color: rgb(122, 122, 122);
+    font-size: 120%;
+  }
+
+  #workDesc2 {
+    margin-top: .3%;
+  }
+
+  .socialDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+  }
+
+  /*.sociallinks:link,
+  .sociallinks:visited {
+    color: rgb(122, 122, 122);
+  }*/
+
+  .sociallinks{
+  color: rgb(122, 122, 122);
+    -webkit-animation-duration: 1.5s;
+   animation-duration: 1.5s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+   -webkit-animation-timing-function: ease-in-out;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   -webkit-animation-iteration-count: infinite;
+  }
+
+  .sociallinks:hover{
+    color: rgb(150, 174, 174);
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+  }
+
+  .gitHub {
+    margin-right: 2em;
+    color: rgb(122, 122, 122);
+    /*font-size: 4em;*/
+  }
+
+  .linkIn {
+    margin-left: 2em;
+  }
+
+  .grid {
+    overflow: hidden;
+    margin: 1%;
+    padding: 0 0 0 0;
+    /*width: 100%;*/
+    list-style: none;
+    text-align: center;
+    color: rgb(122, 122, 122);
+    transition: all 0.3s ease;
+  }
