@@ -10,10 +10,8 @@ export default class Portfolio extends Component {
     return (
       <section id= "portfolio">
           <div className="grid">
-              <h2 id="portfolio-title">projects</h2>
-              {/* <!-- WORK 1 --> */}
+              {/* <h2 id="portfolio-title">projects</h2>
               <figure className="work1 workFigure">
-                  {/* <!-- 1440 × 418 is the size for the images --> */}
                   <img src={work1} alt="" />
                   <figcaption>
                       <h2>Song List Suggestion App</h2>
@@ -22,7 +20,6 @@ export default class Portfolio extends Component {
                       </div>
                   </figcaption>
               </figure>
-              {/* <!-- WORK 2 --> */}
               <figure className = "work2 workFigure">
                   <img src={work2} alt="" />
                   <figcaption>
@@ -31,7 +28,25 @@ export default class Portfolio extends Component {
                         <p>Javascript project where I exercised my knowledge of Javascript and CSS to create a beautiful working Calculator</p>
                       </div>
                   </figcaption>
-              </figure>
+              </figure> */}
+              <div className="gallery cf">
+                <div>
+                  <a href="">
+                    <img src={work1} alt=""/>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <img src={work2} alt=""/>
+                  </a>
+                </div>
+                {/* <div>
+                  <img src="" alt=""/>
+                </div>
+                <div>
+                  <img src="" alt=""/>
+                </div> */}
+              </div>
           </div>
       </section>
     )

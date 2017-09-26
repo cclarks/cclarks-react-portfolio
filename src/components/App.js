@@ -49,8 +49,8 @@ class App extends Component {
             <div className="footerRow">
                 <p>&copy; 2017 CODY.CLARK</p>
                 <div className="socialMediaLinks">
-                    <a href="https://github.com/cclarks"><i className="fa fa-github fa-2x sociallinks" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/cody-clark-7b48b7124/"><i className="fa fa-linkedin fa-2x sociallinks" aria-hidden="true"></i></a>
+                    <a href="https://github.com/cclarks"><i className="fa fa-github fa-2x sociallinks footerLinks gitHubfooter" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/cody-clark-7b48b7124/"><i className="fa fa-linkedin fa-2x sociallinks footerLinks" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>

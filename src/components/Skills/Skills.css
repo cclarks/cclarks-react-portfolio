@@ -20,12 +20,14 @@
     justify-content: space-around;
     margin-top: 2em;
     font-size: 3em;
+    margin-bottom: 1em;
   }
 
   .skills h2 {
     text-transform: uppercase;
     font-size: 3em;
     text-align: center;
+    margin-bottom: 1em;
   }
 
   .skills-i i{
@@ -44,3 +46,18 @@
     animation-name: bounce;
     -moz-animation-name: bounce;
   }
+
+
+    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+      .skillsLinks {
+        font-size: 1em;
+      }
+
+      .skills h2 {
+        text-transform: uppercase;
+        font-size: 2.2em;
+        text-align: center;
+        margin-bottom: 1em;
+      }
+
+    }

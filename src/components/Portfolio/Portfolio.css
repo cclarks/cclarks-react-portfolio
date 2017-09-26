@@ -1,6 +1,6 @@
 /*PORTFOLIO STYLES*/
 
-  #portfolio-title {
+  /*#portfolio-title {
     text-transform: uppercase;
     font-size: 3em;
   }
@@ -35,11 +35,6 @@
     justify-content: center;
     flex-direction: column;
   }
-
-  /*.workFigure figcaption:hover {
-    letter-spacing: .25em;
-    margin-top: 1em;
-  }*/
 
   .workFigure h2 {
     font-family: 'Prata', serif;
@@ -78,9 +73,78 @@
 
   .work4 img {
     z-index: 4;
+  }*/
+
+  #portfolio {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+  /*font: 14px/1 'Open Sans', sans-serif;*/
+  /*color: #555;
+  background: #e5e5e5;*/
   }
+
+/*body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #e5e5e5;
+}*/
+
+.gallery {
+  width: 100%;
+  height: 45%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.gallery > div {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+
+.gallery > div > a > img {
+  width: 25em;
+  transition: .1s transform;
+  transform: translateZ(0);
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > a > img {
+  transform: scale(1.3,1.3);
+  transition: .4s transform ease-in-out;
+}
+
+
+.cf:before, .cf:after {
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h1 {
+  margin: 3em 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
 
 
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+    .gallery > div > img {
+      width: 15em;
+      transition: .1s transform;
+      transform: translateZ(0); /* hack */
+    }
 
   }
