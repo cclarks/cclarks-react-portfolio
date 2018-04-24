@@ -1,0 +1,101 @@
+/* thanks --> https://codepen.io/PiotrFrancug/pen/JKyjkz for the inspiration */
+html {
+    height: 100%;
+}
+body {
+	background: #5C258D;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.container {
+	max-width: 325px;
+	margin: 7em auto;
+}
+.cloud,
+.drop {
+	fill: #fff;
+}
+.bolt,
+.sun,
+.ray {
+	fill: #ffcd64;
+}
+#sun-group .sun,
+#sun-group .ray {
+	animation: rise 6s infinite ease-out;
+}
+.bolt {
+	animation: thunder 2s infinite ease-out;
+}
+.bolt.bolt1 {
+	animation-delay: -1.0s;
+}
+.bolt.bolt2 {
+	animation-delay: -1.4s;
+}
+.bolt.bolt3 {
+	animation-delay: -1.8s;
+}
+.drop {
+	transform-origin: 50% 50%;
+	animation: rain 3s infinite ease-out;
+}
+.drop:nth-child(1) {
+	animation-delay: -1.0s;
+}
+.drop:nth-child(2) {
+	animation-delay: -1.4s;
+}
+.drop:nth-child(3) {
+	animation-delay: -1.6s;
+}
+.drop:nth-child(4) {
+	animation-delay: -1.2s;
+}
+.drop:nth-child(5) {
+	animation-delay: -1.6s;
+}
+.drop:nth-child(6) {
+	animation-delay: -2s;
+}
+@keyframes rain {
+	0% {
+		opacity: 1;
+		transform: translate(0, -120px);
+	}
+	50% {
+		opacity: 0.5;
+		transform: translate(0, -60);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, -30px);
+	}
+}
+@keyframes thunder {
+	0% {
+		opacity: 1;
+		transform: translate(5px, -80px);
+	}
+	50% {
+		opacity: 0;
+		transform: translate(0, -80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(5px, -80px);
+	}
+}
+@keyframes rise {
+	0% {
+		transform: translate(0, -40px);
+	}
+	50% {
+		transform: translate(0, -25px);
+	}
+	100% {
+		transform: translate(0, -40px);
+	}
+}
